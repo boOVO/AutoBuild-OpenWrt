@@ -4,6 +4,8 @@
 # Author: eSirPlayground
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
+# master
+# https://github.com/coolsnowwolf/lede
 
 name: Build_x86
 
@@ -42,9 +44,7 @@ jobs:
     - name: Clone source code
       env: 
         REPO_URL: https://github.com/openwrt/openwrt
-#https://github.com/coolsnowwolf/lede
         REPO_BRANCH: openwrt-23.05
-#master
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
